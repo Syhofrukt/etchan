@@ -1,0 +1,114 @@
+
+
+.nav-button {
+    background-color: rgb(222, 222, 222);
+    box-shadow: 0px 0px 5px black;
+    font-weight: bold;
+    transition: all 0.3s;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    color: #131212;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    cursor: pointer;
+    height: 32px;
+    margin: 0 5px;
+}
+
+.nav-button:hover {
+    box-shadow: 0px 0px 10px;
+    color: rgb(0, 0, 0);
+}
+
+.nav-button img {
+    width: 15px;
+    margin-right: 8px;
+}
+
+.popup-login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 20px;
+    background-color: grey;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: none;
+    transform: translate(-50%, -50%) scale(1.25);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.popup-login.active {
+    display: block;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-login .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 24px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 998;
+}
+
+.popup-login .close-button:hover {
+    background-color: darkred;
+}
+
+.popup-login input[type="username"],
+.popup-login input[type="password"] {
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    width: 95%;
+    margin: 15px 0;
+}
+
+.remember {
+    position: relative;
+}
+
+.remember label {
+    top: -100px;
+}
+
+.popup-login h2 {
+    right: -40%;
+    position: relative;
+    align-items: center;
+}
+
+.popup-login button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    background-color: #1e1e20;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.popup-login button:hover {
+    background-color: #0056b3;
+}
+

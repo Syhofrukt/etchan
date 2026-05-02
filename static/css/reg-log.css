@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: #ecf0f1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(44, 62, 80, 0.4);
+    width: 320px;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input,
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background: #f7f9fa;
+    outline: none;
+    font-size: 14px;
+    color: #2c3e50;
+    box-sizing: border-box;
+}
+
+.input-box input:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #2980b9;
+}
+
+.remeber {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1f6391;
+}
+
+select, input[type="date"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

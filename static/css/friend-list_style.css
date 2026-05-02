@@ -1,0 +1,240 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    transition: all 0.8s;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--navbar-bg);
+    padding: 0.3% 2%;
+    border-bottom: 1px solid #9898a5;
+    position: sticky;
+    top: 0%;
+    z-index: 200;
+    height: 75px;
+}
+
+.logo-img {
+    width: 90px;
+    height: 50px;
+    color: var(--text-color);
+}
+
+.page-name {
+    font-size: 20px;
+    color: var(--navbar-text);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex: 2;
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-right {
+    flex: 1;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-left a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.navbar-left ul li img {
+    width: 90px;
+    margin: 0px 15px;
+}
+
+.navbar-user-icon {
+    margin-left: 40px;
+}
+
+.navbar-user-icon img {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#search-button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    box-shadow: 0px 0px 5px black;
+    font-weight: bold;
+    margin-right: 3%;
+    transition: all 0.5s;
+    border: 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 15%;
+}
+
+#search-button:hover {
+    box-shadow: 0px 0px 10px;
+    color: var(--button-hover-text);
+    cursor: pointer;
+}
+
+.registration-button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    box-shadow: 0px 0px 5px black;
+    font-weight: bold;
+    margin-left: 0%;
+    transition: all 0.5s;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    width: 130%;
+    position: relative;
+    top: -1px;
+}
+
+.registration-button:hover {
+    box-shadow: 0px 0px 10px;
+    color: var(--button-hover-text);
+    cursor: pointer;
+}
+
+.main-window {
+    flex-basis: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+}
+
+.left-window {
+    flex-basis: 15%;
+    position: sticky;
+    top: 75px;
+    align-self: flex-start;
+    border-right: 1px solid #9898a5;
+}
+
+.left-links a {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    color: var(--left-window-text);
+    text-decoration: none;
+    width: fit-content;
+}
+
+.right-window {
+    position: sticky;
+    top: 75px;
+    height: 200px;
+    flex-basis: 15%;
+    background: var(--right-window-bg);
+    color: var(--right-window-text);
+    border-radius: 7px;
+    padding: 1%;
+    word-break: break-all;
+}
+
+.right-window::-webkit-scrollbar {
+    width: 8px;
+}
+
+.right-window::-webkit-scrollbar-track {
+    background: var(--right-window-bg);
+}
+
+.right-window::-webkit-scrollbar-thumb {
+    background: var(--right-window-scroll);
+}
+
+.right-window::-webkit-scrollbar-thumb:hover {
+    background: var(--right-window-scroll-hover);
+}
+
+.right-window p {
+    font-size: 15px;
+}
+
+.right-window-title {
+    margin-bottom: 18px;
+    margin-left: 0%;
+}
+
+.right-window-title div {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0px;
+}
+
+.right-window-title h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.friends-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.friends-container a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.friends-container p {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.friend-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: var(--thread-bg);
+    position: relative;
+    width: 200px;
+}
+
+.friend-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.friend-name {
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    left: 70px;
+    color: var(--text-color);
+}

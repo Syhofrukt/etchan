@@ -1,0 +1,40 @@
+
+
+.notification-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background-color: var(--thread-bg);
+    position: relative;
+    transition: background-color 0.8s ease, border-color 0.8s ease;
+    margin: 15px 0px;
+}
+
+.error-message {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    background-color: var(--thread-bg);
+    position: relative;
+    transition: background-color 0.8s ease, border-color 0.8s ease;
+    margin: 15px 0px;
+}
+
+.notification-card:hover {
+    transform: translateY(-2px);
+}
+
+.notification-text {
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.notification-time {
+    font-size: 13px;
+    color: var(--text-muted, #888);
+}
